@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation du Langage C</title>
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Documentation du Langage C</h1>
+    </header>
+
+    <div class="container">
+      <aside id="sidebar">
+        <div class="sidebar-content">
+          <h2>Kawtar Mekhfioui</h2>
+          <p>Bienvenue dans la documentation du langage C, créée par Kawtar Mekhfioui.</p>
+          <p>Ce site est responsive, adapté à toutes les tailles d'écrans, et est hébergé sur GitHub Pages.</p>
+        </div>
+      </aside>
+
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#basics">Notions de Base</a></li>
+          <li><a href="#pointers">Pointeurs</a></li>
+          <li><a href="#functions">Fonctions</a></li>
+          <li><a href="#examples">Exemples</a></li>
+          <li><a href="#resources">Ressources</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <!-- Add a container div for each section with the class "section" -->
+        <section id="introduction" class="section">
+          <h2>Introduction</h2>
+          <p>La documentation suivante couvre les aspects essentiels du langage C.</p>
+          <img src="./language_c.png" alt="Logo C">
+        </section>
+
+        <section id="basics" class="section">
+            <h2>Notions de Base</h2>
+            <p>Le langage C est un langage de programmation impératif qui permet de créer des programmes efficaces et performants. Voici quelques notions de base à comprendre :</p>
+        
+            <ul>
+                <li><strong>Variables :</strong> En C, vous utilisez des variables pour stocker des données. Chaque variable a un type, tel que int, float, char, etc.</li>
+                <li><strong>Instructions de Contrôle :</strong> Vous utilisez des structures de contrôle telles que les boucles (for, while) et les instructions conditionnelles (if, else) pour contrôler le flux d'exécution du programme.</li>
+                <li><strong>Tableaux :</strong> Les tableaux permettent de stocker une collection de données du même type. Vous pouvez accéder à chaque élément du tableau en utilisant un indice.</li>
+                <li><strong>Opérateurs :</strong> Le langage C offre une variété d'opérateurs, tels que +, -, *, /, %, etc., pour effectuer des opérations sur les variables.</li>
+            </ul>
+        
+            <p>Pour en savoir plus sur les notions de base du langage C, vous pouvez consulter des ressources en ligne telles que <a href="https://www.learn-c.org/" target="_blank">Learn-C.org</a>.</p>
+        </section>
+
+        <section id="pointers" class="section">
+          <h2>Pointeurs</h2>
+          <p>Les pointeurs sont des variables spéciales qui stockent l'adresse mémoire d'une autre variable. Travailler avec des pointeurs offre une puissance et une flexibilité supplémentaires dans le langage C. Voici quelques concepts clés :</p>
+      
+          <ul>
+              <li><strong>Déclaration de Pointeurs :</strong> Vous déclarez un pointeur en utilisant le type de données suivi de l'opérateur étoile (*). Par exemple, int *ptr déclare un pointeur vers un entier.</li>
+              <li><strong>Opérateur d'Adresse (&) :</strong> Vous utilisez l'opérateur & pour obtenir l'adresse mémoire d'une variable. Par exemple, &variable renvoie l'adresse de variable.</li>
+              <li><strong>Opérateur de Déréférencement (*) :</strong> Vous utilisez l'opérateur * pour accéder à la valeur stockée à l'adresse mémoire pointée par un pointeur. Par exemple, *ptr renvoie la valeur pointée par ptr.</li>
+              <li><strong>Pointeurs et Tableaux :</strong> En C, les tableaux sont souvent manipulés à l'aide de pointeurs. Un tableau peut être considéré comme un pointeur vers sa première valeur.</li>
+          </ul>
+      
+          <p>Pour mieux comprendre les pointeurs en C, vous pouvez consulter des tutoriels en ligne, tels que <a href="https://www.learn-c.org/pointers" target="_blank">Learn-C.org - Pointeurs</a>.</p>
+      
+        </section>
+
+        <section id="functions" class="section">
+          <h2>Fonctions</h2>
+          <p>Les fonctions sont des blocs de code réutilisables qui permettent d'organiser et de structurer votre programme en le divisant en tâches plus petites. Voici quelques points importants à connaître sur les fonctions en langage C :</p>
+    <ul>
+        <li><strong>Déclaration de Fonction :</strong> Une fonction est déclarée en spécifiant son type de retour, son nom et les types de ses paramètres. Par exemple, <code>int additionner(int a, int b)</code> déclare une fonction qui renvoie un entier et prend deux entiers en paramètres.</li>
+        <li><strong>Appel de Fonction :</strong> Pour exécuter le code d'une fonction, vous l'appelez en utilisant son nom suivi des arguments entre parenthèses. Par exemple, <code>resultat = additionner(3, 5);</code>.</li>
+        <li><strong>Retour de Valeur :</strong> Une fonction peut renvoyer une valeur à l'endroit où elle a été appelée à l'aide du mot-clé <code>return</code>. Par exemple, <code>return a + b;</code> renvoie la somme de <code>a</code> et <code>b</code>.</li>
+        <li><strong>Fonctions Prédéfinies :</strong> Le langage C propose de nombreuses fonctions prédéfinies que vous pouvez utiliser sans avoir à les définir vous-même, comme <code>printf</code> pour afficher du texte.</li>
+    </ul>
+
+    <p>Pour voir des exemples concrets d'utilisation des fonctions en C, vous pouvez consulter des ressources en ligne comme <a href="https://www.learn-c.org/functions" target="_blank">Learn-C.org - Fonctions</a>.</p>
+</section>
+        </section>
+
+        <section id="examples" class="section">
+          <h2>Exemples</h2>
+          <p>Quelques exemples pratiques pour mieux comprendre le langage C.</p>
+          <ol>
+            <li>
+              <h3>Hello World!</h3>
+              <p>Un programme simple qui affiche "Hello, World!" à l'écran.</p>
+              <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}</code></pre>
+            </li>
+            <li>
+              <h3>Variables et Opérations</h3>
+              <p>Utilisation de variables et réalisation d'opérations simples.</p>
+              <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int a = 5;
+    float b = 2.5;
+    int result = a + (int)b;
+
+    printf("La somme de %d et %f est %d\n", a, b, result);
+    return 0;
+}</code></pre>
+            </li>
+            <li>
+              <h3>Structures de Contrôle - Boucle For</h3>
+              <p>Utilisation d'une boucle for pour afficher les nombres de 1 à 5.</p>
+              <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    for (int i = 1; i &lt;= 5; ++i) {
+        printf("%d ", i);
+    }
+
+    return 0;
+}</code></pre>
+            </li>
+            <li>
+              <h3>Fonctions</h3>
+              <p>Définition et appel d'une fonction simple.</p>
+              <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+// Déclaration de la fonction
+void greet() {
+    printf("Bonjour!\n");
+}
+
+int main() {
+    // Appel de la fonction
+    greet();
+    return 0;
+}</code></pre>
+            </li>
+            <!-- Ajoutez plus d'exemples ici -->
+            <li>
+              <h3>Tableaux</h3>
+              <p>Déclaration et utilisation d'un tableau en langage C.</p>
+              <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int numbers[5] = {1, 2, 3, 4, 5};
+
+    // Accéder aux éléments du tableau
+    for (int i = 0; i &lt; 5; ++i) {
+        printf("%d ", numbers[i]);
+    }
+
+    return 0;
+}</code></pre>
+            </li>
+
+            <li>
+              <h3>Pointeurs</h3>
+              <p>Utilisation de pointeurs pour manipuler la mémoire.</p>
+              <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    int number = 10;
+    int *ptr = &amp;number;
+
+    // Affichage de la valeur à laquelle le pointeur pointe
+    printf("Valeur: %d\n", *ptr);
+
+    return 0;
+}</code></pre>
+            </li>
+
+            <li>
+              <h3>Structures</h3>
+              <p>Définition et utilisation d'une structure en langage C.</p>
+              <pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+
+// Définition d'une structure
+struct Person {
+    char name[50];
+    int age;
+};
+
+int main() {
+    // Initialisation d'une structure
+    struct Person person1;
+    strcpy(person1.name, "John Doe");
+    person1.age = 25;
+
+    // Affichage des informations
+    printf("Nom: %s, Age: %d\n", person1.name, person1.age);
+
+    return 0;
+}</code></pre>
+            </li>
+
+
+          </ol>
+        </section>
+
+        <section id="resources" class="section">
+          <h2>Ressources</h2>
+          <p>Explorez ces ressources pour approfondir votre compréhension du langage C.</p>
+          <ul>
+            <li><a href="https://www.learn-c.org/" target="_blank">Learn-C.org</a></li>
+            <li><a href="https://www.cprogramming.com/" target="_blank">CProgramming.com</a></li>
+          </ul>
+        </section>
+
+      </main>
+    </div>
+
+
+
+
+
+  </body>
+
+</html>
